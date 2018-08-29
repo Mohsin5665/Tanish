@@ -75,15 +75,15 @@ public class Recycler_Adapter_All_Products_new extends RecyclerView.Adapter<Recy
             }
         });
 
-//       holder.Model_Thumbnail.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(activity,arrayList.get(position).getUsername(),Toast.LENGTH_SHORT).show();
-////                Intent intent = new Intent(activity,Home_profile_model.class);
-////                intent.putExtra("Username",arrayList.get(position).getUsername());
-////                activity.startActivity(intent);
-//            }
-//        });
+       holder.price.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(activity,arrayList.get(position).getUsername(),Toast.LENGTH_SHORT).show();
+//              Intent intent = new Intent(activity,Home_profile_model.class);
+//                intent.putExtra("Username",arrayList.get(position).getUsername());
+//                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override
