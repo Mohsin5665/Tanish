@@ -9,7 +9,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="2dp"
-            android:background="@color/nocolor"
+            android:background="@color/greytrans"
             android:orientation="horizontal">
 
             <ImageView
@@ -26,9 +26,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:fontFamily="@font/gotham_book"
+                    android:fontFamily="@font/font"
                     android:layout_marginTop="2dp"
-                    android:background="@drawable/grey_round"
+                    android:background="@color/greyshade"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
@@ -36,13 +36,13 @@
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:textColor="@color/black"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:text="Name:"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:textColor="@color/black"
                         android:id="@+id/p_name"
                         />
@@ -52,12 +52,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:padding="2dp"
-                    android:background="@drawable/grey_round"
+                    android:background="@color/greyshade"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:textColor="@color/black"
@@ -66,7 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:textColor="@color/black"
                         android:id="@+id/item_price"
                         />
@@ -76,12 +76,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:padding="2dp"
-                    android:background="@drawable/grey_round"
+                    android:background="@color/greyshade"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:textColor="@color/black"
@@ -90,7 +90,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:textColor="@color/black"
                         android:id="@+id/p_qty"
                         />
@@ -100,21 +100,21 @@
                     android:layout_marginTop="2dp"
                     android:layout_height="wrap_content"
                     android:padding="2dp"
-                    android:background="@drawable/grey_round"
+                    android:background="@color/greyshade"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:textColor="@color/black"
                         android:text="Total Price:"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:fontFamily="@font/gotham_book"
+                        android:fontFamily="@font/font"
                         android:textColor="@color/black"
                         android:id="@+id/total_price"
                         />
@@ -124,11 +124,11 @@
                     android:id="@+id/remove"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:fontFamily="@font/gotham_book"
+                    android:fontFamily="@font/font"
                     android:layout_marginTop="2dp"
-                    android:background="@drawable/pink_round"
+                    android:background="@color/greyshade"
                     android:text="Remove"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
 </LinearLayout>

@@ -12,6 +12,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
+            android:background="@color/white"
             android:fontFamily="@font/font"
             android:textColor="@color/Mohagni_back"
             android:textColorHint="@color/Mohagni_back"
