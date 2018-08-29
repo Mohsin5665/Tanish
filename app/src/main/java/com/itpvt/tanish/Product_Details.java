@@ -332,7 +332,7 @@ LinearLayout spinners;
                         tv_aval.setText("Out Of Stock");
                         //tv_aval.setTextColor(R.color.red);
                         Buy.setEnabled(false);
-                        ed_qty.setVisibility(View.GONE);
+                      //  ed_qty.setVisibility(View.GONE);
                         s_color.setVisibility(View.GONE);
                         s_size.setVisibility(View.GONE);
                     }
@@ -343,7 +343,7 @@ LinearLayout spinners;
                         s_color.setVisibility(View.VISIBLE);
                         s_size.setVisibility(View.VISIBLE);
                         spinners.setVisibility(View.VISIBLE);
-                        ed_qty.setVisibility(View.VISIBLE);
+                      //  ed_qty.setVisibility(View.VISIBLE);
                         productifConfigure();
                         // ed_qty.setVisibility(View.GONE);
                     }

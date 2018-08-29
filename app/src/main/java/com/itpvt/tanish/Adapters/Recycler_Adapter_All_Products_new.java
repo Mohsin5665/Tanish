@@ -16,7 +16,6 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.itpvt.tanish.Pojo.Product_pojo;
 import com.itpvt.tanish.Product_Details;
-import com.itpvt.tanish.R;
 import com.itpvt.tanish.Pojo.Product_pojo;
 import com.itpvt.tanish.R;
 

@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".All_Product_Design"></activity>
         <activity android:name=".Categories"></activity>
+        <activity android:name=".Product_Details"></activity>
+        <activity android:name=".FullScreenImage"></activity>
     </application>
 
 </manifest>
