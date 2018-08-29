@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             intent.putExtra("id","67");
             intent.putExtra("title","Categories");
             startActivity(intent);
-            finish();
 
         } else if (id == R.id.Categories)
         {
