@@ -14,7 +14,8 @@ public class Config {
     public static final String POSTALCODE = "postcode";
     public static final String COUNTRY = "country_id";
     public static final String PHONE = "telephone";
-
+    public static final String SHARED_PREF_CART_NO = "cart_id";
+    public static final String SHARED_PREF_CART = "cart";
     ////////GETTING PRODUCT //////
     public static final String URL_All_Categories= "http://tanishk.net/getCategories.php";
     public static final String URL_Sub_Categories= "http://tanishk.net/getSubCategories.php";

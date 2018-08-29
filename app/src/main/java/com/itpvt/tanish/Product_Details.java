@@ -33,7 +33,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
-import com.itpvt.noorjahan.PojoClass.Spinner_attribute_Pojo;
 import com.itpvt.tanish.Pojo.Spinner_attribute_Pojo;
 
 import org.json.JSONArray;
@@ -133,16 +132,16 @@ LinearLayout spinners;
         P_id = intent.getStringExtra("product_id");
         sku = intent.getStringExtra("SKU");
    //     spinners = (LinearLayout) findViewById(R.id.spinner_size);
-        name = (TextView) findViewById(R.id.ptxt);
+        name = (TextView) findViewById(R.id.p_name);
         imageView = (ImageView) findViewById(R.id.p_image);
-        ed_qty = (EditText) findViewById(R.id.qty);
+        //ed_qty = (EditText) findViewById(R.id.qty);
         tv_price = (TextView) findViewById(R.id.price);
-        s_color = (Spinner) findViewById(R.id.spinner);
+        s_color = (Spinner) findViewById(R.id.spinner_color);
         s_size = (Spinner) findViewById(R.id.spinner_size);
-        tv_aval = (TextView) findViewById(R.id.tv_qnty);
+        tv_aval = (TextView) findViewById(R.id.qty);
 //        tv_qty=(TextView)findViewById(R.id.tv_qty);
-        tv_disprice = (TextView) findViewById(R.id.);
-        p_description=(TextView)findViewById(R.id.ptxt1);
+        tv_disprice = (TextView) findViewById(R.id.p_disc);
+        p_description=(TextView)findViewById(R.id.p_disc);
         Buy = (Button) findViewById(R.id.pbtn);
 //        sizechart = (Button) findViewById(R.id.sizechart);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -307,7 +306,7 @@ LinearLayout spinners;
                     String product_id = object.getString("id");
                     String p_price = object.getString("price");
                     String p_sku = object.getString("sku");
-                    String p_img_url=object.getString("img").replace("localhost",Config.ip);
+                    String p_img_url=object.getString("img");
                     String p_des=object.getString("proName");
                     p_type=object.getString("type_id");
                     String p_quantity=object.getString("product_quantity");
@@ -331,7 +330,7 @@ LinearLayout spinners;
                     {
 //                      tv_aval.setText("Out Of Stock");
                         tv_aval.setText("Out Of Stock");
-                        tv_aval.setTextColor(R.color.red);
+                        //tv_aval.setTextColor(R.color.red);
                         Buy.setEnabled(false);
                         ed_qty.setVisibility(View.GONE);
                         s_color.setVisibility(View.GONE);
@@ -402,7 +401,7 @@ LinearLayout spinners;
                 try {
                     JSONObject result=new JSONObject(response);
                     Toast.makeText(getApplicationContext(), "Product Added"  , Toast.LENGTH_SHORT).show();
-                    ChoseOption();
+              //      ChoseOption();
 
 
                 } catch (JSONException e) {
@@ -615,41 +614,41 @@ LinearLayout spinners;
 
         //////////////////////////Chose_Options/////////////////////////////////////
 
-    private void ChoseOption()
-    {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(Product_Details.this);
-        LayoutInflater inflater = Product_Details.this.getLayoutInflater();
-        final View dialogView = inflater.inflate(R.layout.chose_review_checkout, null);
-        builder.setView(dialogView);
-        Button shop,chek;
-        shop=(Button)dialogView.findViewById(R.id.shop);
-        chek=(Button)dialogView.findViewById(R.id.chek);
-        builder.setTitle("Product Added Chose next");
-        shop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                Intent intent =new Intent(Product_Details.this,Home_Categories.class);
+//    private void ChoseOption()
+//    {
+//        final AlertDialog.Builder builder = new AlertDialog.Builder(Product_Details.this);
+//        LayoutInflater inflater = Product_Details.this.getLayoutInflater();
+//        final View dialogView = inflater.inflate(R.layout.chose_review_checkout, null);
+//        builder.setView(dialogView);
+//        Button shop,chek;
+//        shop=(Button)dialogView.findViewById(R.id.shop);
+//        chek=(Button)dialogView.findViewById(R.id.chek);
+//        builder.setTitle("Product Added Chose next");
+//        shop.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Intent intent =new Intent(Product_Details.this,Home_Categories.class);
+////                startActivity(intent);
+//            }
+//        });
+//        chek.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent =new Intent(Product_Details.this,My_Cart.class);
 //                startActivity(intent);
-            }
-        });
-        chek.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent =new Intent(Product_Details.this,My_Cart.class);
-                startActivity(intent);
-            }
-        });
-
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.dismiss();
-            }
-        });
-
-        builder.show();
-    }
-    //////////////////Configureable Quantity////////////////////
+//            }
+//        });
+//
+//        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//                dialogInterface.dismiss();
+//            }
+//        });
+//
+//        builder.show();
+//    }
+//    //////////////////Configureable Quantity////////////////////
     private void ChekgivenQuantity()
     {
         loading = ProgressDialog.show(this,"Checking Availability...","Please Wait...",false,false);
@@ -727,7 +726,7 @@ LinearLayout spinners;
 
                     //Saving values to editor
                     editor.commit();
-                    ChoseOption();
+      //              ChoseOption();
 
                 } catch (JSONException e) {
                     Toast.makeText(getApplicationContext(), "Try Again.. Something Went Wrong", Toast.LENGTH_SHORT).show();
