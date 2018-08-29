@@ -3,6 +3,7 @@ package com.itpvt.tanish.Adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,9 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.itpvt.tanish.Pojo.Product_pojo;
+import com.itpvt.tanish.Product_Details;
 import com.itpvt.tanish.R;
 import com.itpvt.tanish.Pojo.Product_pojo;
 import com.itpvt.tanish.R;
@@ -55,28 +58,28 @@ public class Recycler_Adapter_All_Products_new extends RecyclerView.Adapter<Recy
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(activity, Product_Details.class);
-//                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
-//                intent.putExtra("SKU",arrayList.get(position).getSKU());
-//                activity.startActivity(intent);
+                Intent intent = new Intent(activity, Product_Details.class);
+                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
+                intent.putExtra("SKU",arrayList.get(position).getSKU());
+                activity.startActivity(intent);
             }
         });
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(activity, Product_Details.class);
-//                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
-//                intent.putExtra("SKU",arrayList.get(position).getSKU());
-//                activity.startActivity(intent);
+                Intent intent = new Intent(activity, Product_Details.class);
+                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
+                intent.putExtra("SKU",arrayList.get(position).getSKU());
+                activity.startActivity(intent);
 
 //
             }
         });
 
-//        holder.Model_Thumbnail.setOnClickListener(new View.OnClickListener() {
+//       holder.Model_Thumbnail.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-////                Toast.makeText(activity,arrayList.get(position).getUsername(),Toast.LENGTH_SHORT).show();
+//                Toast.makeText(activity,arrayList.get(position).getUsername(),Toast.LENGTH_SHORT).show();
 ////                Intent intent = new Intent(activity,Home_profile_model.class);
 ////                intent.putExtra("Username",arrayList.get(position).getUsername());
 ////                activity.startActivity(intent);
