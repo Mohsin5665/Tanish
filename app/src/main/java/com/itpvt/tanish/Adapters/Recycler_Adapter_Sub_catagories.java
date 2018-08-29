@@ -50,6 +50,7 @@ public class Recycler_Adapter_Sub_catagories extends RecyclerView.Adapter<Recycl
                     intent.putExtra("id",arrayList.get(position).getCategory_id());
                     intent.putExtra("title",arrayList.get(position).getName());
                     activity.startActivity(intent);
+                    activity.finish();
             }
         });
     }

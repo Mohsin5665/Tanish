@@ -92,10 +92,12 @@ public class Categories extends AppCompatActivity {
                 }
                 if (data==null)
                 {
-    //                    Intent intent=new Intent(Categories.this,All_Products.class);
-    //                    intent.putExtra("title",Title);
-    //                    intent.putExtra("id",id);
-    //                    startActivity(intent);
+                    Intent intent=new Intent(Categories.this,All_Product_Design.class);
+                    intent.putExtra("title",Title);
+                    intent.putExtra("id",id);
+                    startActivity(intent);
+                    finish();
+                    loading.dismiss();
                 }
                 else {
                     try {
