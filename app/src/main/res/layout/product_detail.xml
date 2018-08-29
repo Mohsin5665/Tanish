@@ -127,6 +127,82 @@
                        android:layout_weight="1" />
             </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="74dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="Price"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:textColor="#FFFF5656"
+                android:textColorHint="#FFFF5656"
+                android:hint="Orgl Price PKR"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:layout_width="81dp"
+                android:layout_height="46dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="Discount"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/dprice"
+                android:layout_width="131dp"
+                android:layout_height="58dp"
+                android:background="#FFFF5656"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:hint="N/A"
+                android:textColor="#FFFFFF" />
+
+
+
+
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            <TextView
+                android:id="@+id/qty"
+                android:layout_width="74dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text="QTY"
+                android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/pedit"
+                    android:layout_width="87dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:hint="1"/>
+
+                <Button
+                    android:id="@+id/pbtn"
+                    android:layout_width="218dp"
+                    android:layout_height="70dp"
+                    android:background="#FFFF5656"
+                    android:textColor="@color/white"
+                    android:text="ADD TO CART"/>
+
+            </LinearLayout>
         </LinearLayout>
 
 
