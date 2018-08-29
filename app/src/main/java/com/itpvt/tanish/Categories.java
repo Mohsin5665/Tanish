@@ -65,14 +65,14 @@ public class Categories extends AppCompatActivity {
         Intent intent = getIntent();
         id = intent.getStringExtra("id");
         Title=intent.getStringExtra("title");
-        if (!id.equals("")&&id!=null)
-        {
-          id="67";
-        }
-        if (!Title.equals("")&&Title!=null)
-        {
-            title.setText(Title);
-        }
+//        if (!id.equals("")&&id!=null)
+//        {
+//          id="67";
+//        }
+//        if (!Title.equals("")&&Title!=null)
+//        {
+//            title.setText(Title);
+//        }
 
         GetCategories();
     }
