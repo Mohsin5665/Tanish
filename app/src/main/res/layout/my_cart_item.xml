@@ -9,7 +9,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="2dp"
-            android:background="@color/nocolor"
+            android:background="@color/greytrans"
             android:orientation="horizontal">
 
             <ImageView
@@ -27,9 +27,7 @@
                     android:layout_height="wrap_content"
                     android:padding="2dp"
                     android:fontFamily="@font/font"
-                    android:layout_marginTop="2dp"
-                    android:background="@drawable/round"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="2dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
@@ -51,9 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:padding="2dp"
-                    android:background="@drawable/round"
-                    android:orientation="horizontal">
+                    android:padding="2dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
@@ -75,9 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:padding="2dp"
-                    android:background="@drawable/round"
-                    android:orientation="horizontal">
+                    android:padding="2dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
@@ -99,9 +93,7 @@
                     android:layout_width="match_parent"
                     android:layout_marginTop="2dp"
                     android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:background="@drawable/round"
-                    android:orientation="horizontal">
+                    android:padding="2dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:padding="2dp"
@@ -125,10 +117,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:fontFamily="@font/font"
-                    android:layout_marginTop="2dp"
-                    android:background="@drawable/round"
-                    android:text="Remove"
-                    android:textColor="@color/white" />
+                    android:layout_marginTop="2dp">
+
+                </Button>
             </LinearLayout>
         </LinearLayout>
 </LinearLayout>
