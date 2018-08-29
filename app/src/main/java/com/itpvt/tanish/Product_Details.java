@@ -323,7 +323,7 @@ public class Product_Details extends AppCompatActivity {
                     name.setText(p_des);
                     tv_aval.setText("In Stock");
                     tv_price.setText(orig);
-                    tv_disprice.setText(disco);
+                    p_description.setText(disco);
 
 
                     if (p_quantity.equals("0"))
