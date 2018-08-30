@@ -94,8 +94,8 @@ public class My_Cart extends AppCompatActivity {
                     chek.setEnabled(false);
                 }
                 else {
-//                    Intent intent = new Intent(My_Cart.this,Check_Out.class);
-//                    startActivity(intent);
+                   Intent intent = new Intent(My_Cart.this,Check_Out.class);
+                    startActivity(intent);
                 }
             }
         });

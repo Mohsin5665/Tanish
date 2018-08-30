@@ -140,7 +140,7 @@ public class Product_Details extends AppCompatActivity {
         s_size = (Spinner) findViewById(R.id.spinner_size);
         tv_aval = (TextView) findViewById(R.id.p_aval);
       //  tv_qty=(TextView)findViewById(R.id.tv_qty);
-    //    tv_disprice = (TextView) findViewById(R.id.p_disc);
+       tv_disprice = (TextView) findViewById(R.id.dprice);
         p_description=(TextView)findViewById(R.id.p_disc);
         Buy = (Button) findViewById(R.id.pbtn);
 //        sizechart = (Button) findViewById(R.id.sizechart);
@@ -323,7 +323,8 @@ public class Product_Details extends AppCompatActivity {
                     name.setText(p_des);
                     tv_aval.setText("In Stock");
                     tv_price.setText(orig);
-                    p_description.setText(disco);
+                    tv_disprice.setText(disco);
+
 
 
                     if (p_quantity.equals("0"))
@@ -332,7 +333,7 @@ public class Product_Details extends AppCompatActivity {
                         tv_aval.setText("Out Of Stock");
                         //tv_aval.setTextColor(R.color.red);
                         Buy.setEnabled(false);
-                      //  ed_qty.setVisibility(View.GONE);
+                        ed_qty.setVisibility(View.GONE);
                         s_color.setVisibility(View.GONE);
                         s_size.setVisibility(View.GONE);
                     }
